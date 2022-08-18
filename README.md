@@ -23,6 +23,8 @@ and then returns the calculated value as follows.
 }
 ```
 
+As per the bonus requirement. The tax rules are injected as dependencies for the tax calculator, this will give the flexibility of having different rules based on the provided interface (`ITaxRule`). The current rules are defined in the `TaxRule` class.
+
 ## Bugs found
 
 - Total tax fee was returning incorrect value for date values with 60 minute plus difference.
